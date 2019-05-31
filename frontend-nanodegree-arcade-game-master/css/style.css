@@ -1,0 +1,69 @@
+body {
+    text-align: center;
+    font-family: 'Uncial Antiqua', cursive;
+    color: rgb(243, 177, 44);
+    background-color: #aa1f24;
+}
+
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0; 
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+      -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    transition: all 1.5s ease;
+}
+
+h1 {
+    font-size: 100px;
+    padding: 0px;
+        margin-block-start: 0.0em;
+    margin-block-end: 0.0em;
+    color: white;
+}
+
+h2 {
+    color: white;
+}
+
+.move {
+    -webkit-transform: translate3d(0, 0, 0) !important;
+    transform: translate3d(0, 0, 0) !important;
+    transition: all 1.5s ease;
+}
+
+
+#overlay .centered {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.grid-container {
+  
+  display: grid;
+  grid-template-columns: auto auto auto ;
+  grid-gap: 10px;
+  padding-right: 150px;
+  padding-left: 150px;
+  padding-top: 40px;
+
+}
+
+.grid-container > div {
+  text-align: center;
+  font-size: 30px;
+}
+
+.mejs-container .mejs-controls {
+	height: 100%;
+	background: transparent;
+	display: flex;
+}
